@@ -13,7 +13,7 @@ def index():
     return render_template('index.html')  # display the html
 
 
-@app.route('/process', methods=['POST'])  # hidden route
+@app.route('/process', methods=['POST'])  # hidden route -
 def process():
     session['name'] = request.form['name']
     session['location'] = request.form['location']
